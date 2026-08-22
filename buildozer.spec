@@ -4,6 +4,8 @@ title = Kalkulator
 package.name = kalkulator
 package.domain = org.hadymoch78
 
+android.accept_sdk_license = True
+
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 
@@ -23,6 +25,3 @@ log_level = 2
 warn_on_root = 1
 
 
-[android]
-
-android.accept_sdk_license = True
