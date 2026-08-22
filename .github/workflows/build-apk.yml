@@ -54,7 +54,9 @@ jobs:
 
       - name: Build APK
         run: |
-             ./venv/bin/python -m buildozer android debug
+           export PATH="$GITHUB_WORKSPACE/venv/bin:$PATH"
+            ./venv/bin/cython --version
+            ./venv/bin/python -m buildozer android debug
              
       - name: Upload APK
         uses: actions/upload-artifact@v4
